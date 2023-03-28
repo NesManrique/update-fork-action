@@ -1,0 +1,14 @@
+name: 'Update Fork from Upstream'
+description: 'Checks for changes in the upstream repository and creates a pull request with the changes'
+branding:
+  icon: 'git-pull-request'
+  color: 'blue'
+
+inputs:
+  upstream-url:
+    description: 'URL of the upstream repository'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
